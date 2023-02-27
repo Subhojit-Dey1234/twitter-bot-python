@@ -17,7 +17,7 @@ def run_the_app():
     tweets = tweets.json()
 
     l = len(tweets['data']) - len(previous_tweet)
-    print(l)
+    print("The App is Running..... " +  l)
     if(l > 0 and is_app_started):
 
         auth = tweepy.OAuthHandler(api_key,api_key_secret)
